@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<script src="js/jquery-1.11.2.min.js"></script>
+<!-- <script src="js/jquery-3.4.1.min.js"></script> -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JavaScript Practice - by Monirul</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        let x = 10;
+        let y = 5;
+        x += y;
+        // console.log(`My total value is $x`);
+        $('#divResult').text('My total value is ' + x);
+      });
+    </script>
+
+    <div id="divResult"></div>
+    <button onclick="alertfun();">Click the button</button>
+    <i class="fas fa-sad-tear"></i>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script>
+      function alertfun() {
+        swal.fire('Good job!', 'You clicked the button!', 'success');
+      }
+    </script>
+  </body>
+</html>
